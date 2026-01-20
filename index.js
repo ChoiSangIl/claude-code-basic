@@ -20,9 +20,14 @@ function multiply(a, b) {
   return a * b;
 }
 
+function subtract(a, b) {
+  return a - b;
+}
+
 // 예제 실행
 console.log(greet("Claude"));
 console.log(`1 + 2 = ${add(1, 2)}`);
 console.log(`3 * 4 = ${multiply(3, 4)}`);
+console.log(`5 - 2 = ${subtract(5, 2)}`);
 
-module.exports = { greet, add, multiply };
+module.exports = { greet, add, multiply, subtract };
