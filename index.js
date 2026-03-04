@@ -24,10 +24,15 @@ function subtract(a, b) {
   return a - b;
 }
 
+function power(base, exponent) {
+  return Math.pow(base, exponent);
+}
+
 // 예제 실행
 console.log(greet("Claude"));
 console.log(`1 + 2 = ${add(1, 2)}`);
 console.log(`3 * 4 = ${multiply(3, 4)}`);
 console.log(`5 - 2 = ${subtract(5, 2)}`);
+console.log(`2 ^ 8 = ${power(2, 8)}`);
 
-module.exports = { greet, add, multiply, subtract };
+module.exports = { greet, add, multiply, subtract, power };
