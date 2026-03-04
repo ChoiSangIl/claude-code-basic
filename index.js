@@ -24,6 +24,11 @@ function subtract(a, b) {
   return a - b;
 }
 
+function divide(a, b) {
+  if (b === 0) throw new Error('0으로 나눌 수 없습니다');
+  return a / b;
+}
+
 function power(base, exponent) {
   return Math.pow(base, exponent);
 }
@@ -33,6 +38,7 @@ console.log(greet("Claude"));
 console.log(`1 + 2 = ${add(1, 2)}`);
 console.log(`3 * 4 = ${multiply(3, 4)}`);
 console.log(`5 - 2 = ${subtract(5, 2)}`);
+console.log(`10 / 4 = ${divide(10, 4)}`);
 console.log(`2 ^ 8 = ${power(2, 8)}`);
 
-module.exports = { greet, add, multiply, subtract, power };
+module.exports = { greet, add, multiply, subtract, divide, power };
